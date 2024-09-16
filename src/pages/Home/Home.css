@@ -1,6 +1,6 @@
 .home {
   padding: 10px 10px;
-  padding-bottom: 100pz;
+  padding-bottom: 100px;
 }
 .hero {
   max-width: 600px;
@@ -17,7 +17,7 @@
 .hero p {
   width: 75%;
   color: #e3e3e3;
-  line_height: 1.5;
+  line-height: 1.5;
 }
 .hero form {
   padding: 8px;
@@ -60,9 +60,53 @@
   grid-template-columns: 0.5fr 2fr 1fr 1fr 1.5fr;
   padding: 15px 20px;
   align-items: center;
-  border-radius: 1px soild #3c3c3c;
+  border-radius: 1px solid #3c3c3c;
+}
+.table-layout p,
+.table-layout div {
+  margin: 0; /* Ensure no extra margins */
+  padding: 0; /* Ensure no extra padding */
 }
 
 .market-cap {
   text-align: right;
+}
+.table-layout:last-child {
+  border: none;
+}
+
+.table-layout div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.table-layout div img {
+  width: 35px;
+}
+.table-layout .green {
+  color: green;
+  text-align: center;
+}
+.table-layout .red {
+  color: red;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .table-layout {
+    grid-template-columns: 0.5fr 3fr 1fr 1fr;
+  }
+  .market-cap {
+    display: none;
+  }
+}
+@media (max-width: 70px) {
+  .table-layout div img {
+    width: 25px;
+  }
+  table-layout {
+    font-size: 13px;
+  }
+  .hero form input {
+    width: 100px;
+  }
 }

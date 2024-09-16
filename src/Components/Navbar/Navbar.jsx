@@ -7,7 +7,7 @@ import { CoinContext } from "../../context/CoinContext"; // Corrected the typo
 const Navbar = () => {
   const { setCurrency } = useContext(CoinContext); // Corrected the typo
 
-  const currencyHandler = (event) => {
+      const currencyHandler = (event) => {
     switch (
       event.target.value // Fixed "targe" to "target"
     ) {
