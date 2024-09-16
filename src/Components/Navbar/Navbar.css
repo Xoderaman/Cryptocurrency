@@ -1,0 +1,16 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10%;
+  color: #ddd;
+  border-bottom: 2px solid #3c3c3c;
+}
+.navbar .logo {
+  width: max(12vw, 120px);
+}
+.navbar ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
